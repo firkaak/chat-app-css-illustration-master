@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body {
+    
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+
+}
+img {
+    display: block;
+}
+
+.purpleheading {
+    width: 700px;
+    aspect-ratio: 1/2;
+    background-image: linear-gradient(to top, hsl(264, 100%, 61%), hsl(293, 100%, 63%) );
+    border-radius: 50%;
+    transform:rotate(-10deg);
+    position: absolute;
+    bottom: 7rem;
+    left: -33rem;
+    z-index: -1;
+} 
+/*device view*/
+.product {
+    padding: 4rem 0;
+    display: grid;
+    place-content: center;
+    
+}
+.mobile {
+    width: 250px;
+    aspect-ratio: 3/6;
+    border: 10px solid white;
+    border-radius: 2rem;
+    box-shadow: 0px 10px 60px hsla(10, 2%, 20%, 0.3);
+    overflow:hidden;
+    background-color: hsl(270, 20%, 96%);
+    position: relative;
+}
+.appheading {
+    height: 60px;
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%) );
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items:center;
+   justify-content: space-between;
+   padding-top: 1rem;
+   padding-inline: 0.8rem;
+}
+.service-provider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem; 
+}
+
+.service-provider-name {
+    display: gird;
+    grid-template-rows: auto;
+}
+.service-provider-name h3 {
+    font-size: 0.7rem;
+}
+.service-provider-name p {
+    font-size: 0.5rem;
+    color: hsl(276, 100%, 81%);
+}
+.mobilespeaker{
+    background-color: hsl(0, 0%, 100%);
+    width: 130px;
+    height: 17px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+.avatar {
+    width: 1.6rem;
+    border: 1.5px solid white;
+    border-radius: 50%;
+}
+.screen {
+    padding: 0.5rem;
+    display: grid;
+    align-items: start;
+    gap: 0.8rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.messages {
+    font-size: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.message {
+    padding: 0.6rem;
+    max-width: 67%;
+
+
+}
+.pics {
+padding: 0;
+display: flex;
+justify-content: end;
+align-self: flex-end;
+gap: 10px;
+}
+.chatleft{
+    background-color: hsl(276, 55%, 52%, 0.1);
+    color: hsl(276, 55%, 52%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 10px;
+    
+}
+.chatright{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(271, 15%, 43%);
+    align-self: self-end;
+}
+.chatprice {
+    max-width: 80%;
+    background-image: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:hsl(0, 0%, 100%)
+
+}
+.dogpics {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+.message span {
+    display: inline-block;
+    margin-right: 5px;
+    width: 10px;
+    aspect-ratio: 1;
+    border: 1px solid hsl(289, 100%, 72%);
+    border-radius: 50%;
+}
+.service {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.price {
+    font-size: 0.8rem;
+ }
+ .placeholder {
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    color: hsl(206, 6%, 79%);
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 6px;
+    
+ }
+ .placeholder p {
+    margin-left: 0.8rem;
+ }
+ .send {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(271, 36%, 24%);
+    font-weight: 500;
+    font-size: 1rem;
+    border: 0;
+    height: 1.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+ }
+
+
+
+/*product description*/
+.productDescription {
+    text-align: center;
+    padding: 0rem 1.5rem;
+    
+}
+.productAbout {
+    display: grid;
+    gap: 2rem;
+}
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: hsl(271, 36%, 24%);
+}
+.productAbout p {
+    color: hsl(270, 7%, 64%);
+    line-height: 1.5rem;
+}
+
+/*larger than mobile*/
+@media screen and (min-width: 854px){
+
+    main {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .productDescription {
+        text-align: left;
+        display: grid;
+        place-content: center;
+    }
+    .productAbout {
+        max-width: 70%;
+    }
+    .purpleheading {
+        width: 700px;
+        /* height: 100vh; */
+        aspect-ratio: 1/2;
+        background-image: linear-gradient(to top, hsl(264, 100%, 61%), hsl(293, 100%, 63%) );
+        border-radius: 48.555%;
+        transform: rotate(-8deg);
+        /* border-bottom-right-radius: 10rem; */
+        /* border-bottom-left-radius: 10rem; */
+        position: absolute;
+        bottom: 5rem;
+        left: -18rem;
+        z-index: -1;
+    }   
+    .product {
+        display: grid;
+        margin-left: 15rem; 
+    }
+
+}
+
