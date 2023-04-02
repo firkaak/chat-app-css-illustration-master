@@ -50,6 +50,8 @@ img {
    justify-content: space-between;
    padding-top: 1rem;
    padding-inline: 0.8rem;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
 }
 .service-provider {
   display: flex;
