@@ -237,9 +237,7 @@ gap: 10px;
 
 /*larger than mobile*/
 @media screen and (min-width: 854px){
-    body {
-        /* width: 100vw; */
-    }
+
     main {
         min-height: 100vh;
         display: grid;
